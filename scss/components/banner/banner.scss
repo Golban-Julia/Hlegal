@@ -1,0 +1,47 @@
+.banner{
+  position: relative;
+  height: 100vh;
+
+  &:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/symbol.svg");
+   @extend %background-img;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  & h1{
+    position: relative;
+    font-weight: $font-bold;
+    color: map-get($color, color-white);
+    line-height: 75px;
+    margin-bottom: 0;
+    font-size: 4.5vh;
+  }
+
+  &__scroll {
+    $width: 42px;
+    display: inline-block;
+    width: $width;
+    height: $width;
+    position: absolute;
+    left: calc(50% - #{$width} / 2);
+    bottom: 30px;
+
+    &:hover {
+      circle {
+        stroke: map-get($color, accent-color);
+      }
+      path {
+        stroke: map-get($color, accent-color);
+      }
+      circle, path{
+        transition: $default-transition;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.command{
+
+  @media (min-width: 575px) {
+    padding: 250px 0 60px 0;
+  }
+  @include desktop-md-min(){
+    &__title{
+      h2{
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+    &__content{
+      gap: 60px;
+      &-item{
+        width: calc(50% - 30px);
+      }
+    }
+  }
+  @include desktop-lg-min(){
+    padding: 150px 0 60px 0;
+  }
+  @include desktop-lg-1-min(){
+    &__content{
+      &-item{
+        width: calc(100% / 3 - 60px);
+      }
+    }
+    @include desktop-xxl-min(){
+      &__title{
+        padding: 0 120px 0 120px;
+      }
+    }
+  }
+}

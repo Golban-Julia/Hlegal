@@ -1,0 +1,29 @@
+.corporation{
+  padding-top: 176px;
+
+  &__content{
+    padding: 0;
+    &-img{
+      @extend %background-img;
+      height: 300px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    h3{
+      @extend %h2-sm;
+      color: map-get($color, main-text);
+      margin-bottom: 15px;
+    }
+    p{
+      font-weight: $font-bold;
+      font-size: map-get($color,font-size-xs);
+      line-height: 15px;
+      letter-spacing: 1px;
+      text-transform: $uppercase;
+      color: map-get($color, grey-bg-text);
+      border-bottom: 4px solid map-get($color,grey-separator);
+      padding-bottom: 34px;
+      margin-bottom: 0;
+    }
+  }
+}

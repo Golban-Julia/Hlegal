@@ -1,0 +1,68 @@
+.team{
+  font-weight: $font-bold;
+  position: relative;
+  padding-top: 50px;
+
+
+  &  .carousel{
+    position: initial;
+    .carousel-indicators{
+      bottom: -74px;
+      button{
+        background-color: map-get($color,active-regular);
+        width: 16px;
+        height: 16px;
+        border-radius:50%;
+        margin-right: 7px;
+        margin-left: 7px;
+      }
+    }
+  }
+
+&__item{
+  background: map-get($color,grey-bg);
+  margin-bottom: 30px;
+  border-radius: 12px;
+  .row {
+    flex-direction: column;
+  }
+  &-photo{
+    .img{
+      background-image: url("../assets/img/Team-1-min.jpg");
+      @extend %background-img;
+      height: 500px;
+      border-radius: 12px 12px 0 0;
+    }
+  }
+
+  &-text{
+    padding: 30px;
+    a{
+      margin-bottom: 5px;
+      @extend %home-page-a-h4;
+    }
+    blockquote{
+      font-weight: $font-bold;
+      @extend %color-gradient-red;
+      margin-bottom: 30px;
+      max-width: 860px;
+      width: 100%;
+      font-size: 30px;
+      line-height: 37px;
+    }
+    h4{
+      font-weight: $font-bold;
+      font-size: map-get($font-size,font-size-md);
+      line-height: 20px;
+      color: map-get($color,grey-bg-text);
+      margin-bottom: 6px;
+    }
+    h5{
+      font-size: map-get($font-size,font-size-sm);
+      line-height: 22px;
+      color: map-get($color,grey-bg-text);
+      margin-bottom: 0;
+    }
+  }
+}
+}

@@ -1,0 +1,48 @@
+.achievements{
+  @include desktop-md-min(){
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          img{
+            width: 132px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+  @include desktop-lg-1-min(){
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          img{
+            width: 196px;
+            height: 110px;
+          }
+        }
+      }
+    }
+  }
+  @include desktop-xxl-min(){
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          img{
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+  @include desktop-xxxl-min(){
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          img{
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}

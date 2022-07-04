@@ -1,0 +1,27 @@
+%color-gradient-red{
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+%h2-sm{
+  font-weight: $font-bold;
+  font-size: 30px;
+  line-height: 37px;
+}
+%title-gradient-sm{
+  margin-bottom: 0;
+  @extend %color-gradient-red;
+  @extend %h2-sm;
+}
+%background-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+%home-page-a-h4{
+  font-weight: $font-bold;
+  font-size: map-get($font-size, font-size-sm);
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: $uppercase;
+}

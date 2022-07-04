@@ -1,0 +1,61 @@
+.experience {
+  padding: 60px 0;
+  &__tab {
+    & .nav {
+      --bs-nav-link-color: #{map-get($color,grey-bg-text)};
+      --bs-nav-link-hover-color: #{map-get($color, accent-color)};
+      & .active{
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    & .nav-pills {
+      --bs-nav-pills-link-active-color:#{map-get($color, accent-color)};
+      --bs-nav-pills-link-active-bg: initial;
+      padding-right: 60px;
+      flex-direction: row;
+      flex-wrap: initial;
+      border-right: initial;
+      margin: 0 0 30px 12px;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+      a:link {
+      color: map-get($color,grey-bg-text);
+        transition: $default-transition;
+      }
+      a:hover {
+        color: map-get($color, accent-color);
+        transition: $default-transition;
+      }
+      a:active {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: $default-transition;
+      }
+      & .nav-link {
+        text-align: right;
+        padding: 0 30px 0 0;
+        @extend %h2-sm;
+        white-space: nowrap;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    & .tab-content {
+      color: map-get($color, color-white);
+      padding-left: 12px;
+      & h4 {
+        @extend %h2-sm;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-weight: $font-normal;
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

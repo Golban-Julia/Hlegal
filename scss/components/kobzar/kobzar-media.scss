@@ -1,0 +1,112 @@
+.kobzar {
+  @media (min-width: 575px) {
+    padding: 246px 0 30px 0;
+    &__top {
+      &-photo {
+        height: 500px;
+      }
+    }
+  }
+  @include desktop-md-min() {
+    padding: 286px 0 60px 0;
+    &__top {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      &-photo {
+        width: calc(50% - 30px);
+        margin-bottom: 0;
+        height: 375px;
+      }
+      &-title {
+        width: 50%;
+        border-bottom: none;
+      }
+    }
+    &__bottom {
+      &-description {
+        border-top: $border-bottom;
+      }
+    }
+  }
+  @include desktop-lg-1-min {
+    padding: 176px 0 60px 0;
+    &__content {
+      align-items: start;
+    }
+    &__top {
+      width: calc(100% / 3);
+      &-photo {
+        width: 100%;
+      }
+      &-title {
+        display: none;
+      }
+    }
+    &__bottom {
+      width: calc(100% / 3 * 2 - 60px);
+      &-title {
+        display: inline-block;
+      }
+      &-wrapper {
+        align-items: start;
+        a:not(:last-child):after {
+          display: none;
+        }
+        p:after {
+          display: none;
+        }
+      }
+      &-description {
+        border-top: none;
+      }
+    }
+  }
+  @include desktop-xl-min {
+    &__top {
+      &-photo {
+        height: 400px;
+      }
+    }
+    &__bottom {
+      &-wrapper {
+        flex-direction: row;
+
+        p:after {
+          content: '';
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background-color: map-get($color, grey-separator);
+          border-radius: 50%;
+        }
+
+        a {
+
+          &:not(:last-child) {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 6px;
+              height: 6px;
+              background-color: map-get($color, grey-separator);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include desktop-xxl-min(){
+    &__top {
+      &-photo {
+        height: 500px;
+      }
+    }
+  }
+}
+

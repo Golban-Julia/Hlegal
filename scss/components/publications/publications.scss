@@ -1,0 +1,74 @@
+.publications {
+  padding-top: 30px;
+  background-color: map-get($color, grey-bg);
+
+  &__content{
+    &-item{
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    a {
+      @extend %home-page-a-h4;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      @extend %title-gradient-sm;
+    }
+  }
+
+  &__content {
+    flex-direction: column;
+    margin: 0;
+    padding:0 0 30px 0;
+    border-bottom: $border-bottom;
+
+    &-box {
+      background-color: map-get($color, color-white);
+      border-radius: 8px 8px 0 0;
+
+      a {
+        display: inline-block;
+        font-weight: $font-bold;
+        font-size: map-get($font-size, font-size-md);
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+
+      h5 {
+        font-weight: $font-bold;
+        font-size: map-get($font-size, font-size-xs);
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: $uppercase;
+        padding-bottom: 15px;
+        border-bottom: $border-bottom;
+        color: map-get($color, grey-bg-text);
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-weight: $font-normal;
+        font-size: map-get($font-size, font-size-sm);
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+    }
+
+    &-wrapper {
+      padding: 30px;
+    }
+
+    &-photo {
+      @extend %background-img;
+      height: 200px;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+}
+
+

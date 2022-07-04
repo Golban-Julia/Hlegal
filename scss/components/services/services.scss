@@ -1,0 +1,46 @@
+.services{
+  padding-bottom: 60px;
+
+  &__content-info .row {
+    gap: 30px;
+    flex-direction: column;
+  }
+  &__content{
+    &-title{
+      margin-bottom: 60px;
+      a{
+        @extend %home-page-a-h4;
+        margin-bottom: 10px;
+      }
+      h2{
+        @extend %title-gradient-sm;
+      }
+    }
+
+    &-info{
+      gap: 60px;
+
+      img{
+        border-radius: 24px;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 30px;
+        display: block;
+      }
+      a{
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: $font-bold;
+        font-size: map-get($font-size,font-size-lg);
+        line-height: 27px;
+      }
+      p{
+        color: map-get($color, color-white);
+        font-weight: $font-normal;
+        font-size: map-get($font-size, font-size-md);
+        line-height: 26px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

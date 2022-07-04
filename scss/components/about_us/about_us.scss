@@ -1,0 +1,53 @@
+.about_us{
+  padding: 129px 0 30px 0;
+
+  &__wrapper{
+    gap: 30px;
+    padding: 0;
+    flex-direction: column;
+  }
+  &__description{
+    width: 100%;
+    h2{
+      @extend %title-gradient-sm;
+      margin-bottom: 28px;
+    }
+    p{
+      font-weight: $font-normal;
+      font-size: 19px;
+      line-height: 30px;
+      color: map-get($color, color-black);
+    }
+  }
+  &__content{
+    width: 100%;
+    height: 322px;
+    padding-left: 30px;
+    border-left: $border-bottom;
+    &-wrapper{
+      margin-bottom: 40px;
+    }
+    &-item{
+      margin-bottom: 10px;
+      align-items: center;
+      img{
+        height: 32px;
+        width: 32px;
+      }
+      h3{
+        font-weight: $font-bold;
+        font-size: 36px;
+        line-height: 44px;
+        @extend %color-gradient-red;
+        margin-left: 8px;
+        margin-bottom: 0;
+      }
+    }
+    p{
+      font-weight: $font-normal;
+      font-size: map-get($font-size, font-size-md);
+      line-height: 20px;
+      color: map-get($color,main-text);
+    }
+  }
+}

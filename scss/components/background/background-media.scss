@@ -1,0 +1,53 @@
+.background {
+  @include desktop-xxs() {
+    &__img {
+      background-size: cover;
+      height: 115px;
+
+      h2 {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+      }
+    }
+  }
+  @include desktop-md-min() {
+    &__img {
+      height: 234px;
+
+      h2 {
+        font-size: 46px;
+        line-height: 56px;
+        letter-spacing: 63px;
+      }
+    }
+  }
+  @include desktop-lg-1-min() {
+    &__img {
+      height: 312px;
+
+      h2 {
+        font-size: 86px;
+        line-height: 105px;
+      }
+    }
+  }
+  @include desktop-xl-min(){
+    &__img {
+      height: 438px;
+
+      h2 {
+        font-size: 96px;
+        line-height: 117px;
+      }
+    }
+  }
+  @include desktop-xxxl-min(){
+    &__img {
+      height: 584px;
+    }
+  }
+}
+
+
+

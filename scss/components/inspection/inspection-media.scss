@@ -1,0 +1,25 @@
+.inspection{
+  @include desktop-md-min{
+    &__content{
+      h2{
+        font-size: 38px;
+        line-height: 46px;
+      }
+      h3{
+        font-size: map-get($font-size,font-size-lg);
+        line-height: 27px;
+      }
+      figure{
+        img{
+          width: 640px;
+          height: 435px;
+        }
+      }
+    }
+  }
+  @include desktop-xl-min{
+    &__content{
+      padding: 0 120px 0 120px;
+    }
+  }
+}

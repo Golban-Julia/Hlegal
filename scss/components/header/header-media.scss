@@ -1,0 +1,124 @@
+.header{
+
+  @media (max-width: 992px){
+    .container{
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 872px;
+    }
+    &__top{
+      margin-bottom: 30px;
+      &-content{
+        position: static;
+        justify-content: flex-start;
+      }
+    }
+
+    &__navigation{
+      .navbar-brand{
+        display: inline-block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .navbar-nav{
+        margin-top: 0;
+      }
+    }
+  }
+  @include desktop-sm() {
+    padding-top: 0;
+    .container {
+      flex-direction: row;
+      align-items: center;
+    }
+    &__top {
+      margin-bottom: 15px;
+      padding: 10px 0;
+      background: rgba(245, 245, 250, 0.2);
+
+      &-content {
+        justify-content: space-between;
+
+        .header__address, .header__social {
+          display: none;
+        }
+      }
+    }
+    &__top-content > div:not(:last-child):after {
+      content: none;
+    }
+    &__navigation {
+      .navbar-toggler-icon {
+        background-image: url('../assets/icons/hamburger.svg');
+        background-size: cover;
+        width: 42px;
+        height: 42px;
+      }
+
+      & .navbar-toggler,
+      & .navbar-toggler:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+      .navbar-brand {
+        width: initial;
+        margin-bottom: 0;
+        img{
+          width: 100px;
+          height: 57px;
+        }
+        p{
+          font-weight: $font-normal;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    #navbarSupportedContent{
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 12px 12px 0 0;
+      z-index: 2;
+    }
+    .navbar-collapse{
+      .btn-close{
+        display: block;
+        background: #FFFFFF url("../assets/icons/close.svg");
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        top: 69px;
+        right: 23px;
+        opacity: 1;
+      }
+    }
+    .navbar-nav{
+      padding: 64px 12px 12px 12px;
+    }
+    .nav-item{
+      background-color: rgba(245, 245, 250, 1);
+      border-radius: 12px;
+      padding: 7px 0;
+      &:active{
+        background-color: map-get($color, grey-separator);
+        transition: $default-transition;
+      }
+    }
+    .nav-link{
+      border: none;
+      color: map-get($color,active-regular);
+      font-weight: $font-bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+    }
+  }
+}
+
+

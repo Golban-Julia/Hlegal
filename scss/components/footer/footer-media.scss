@@ -1,0 +1,36 @@
+.footer{
+ @include desktop-md-min(){
+   .footer__menu {
+     flex-direction: row;
+     padding: 0 50px 0 50px;
+   }
+ }
+  @include desktop-lg-1-min{
+    &-wrapper{
+      position: relative;
+    }
+    position: relative;
+    &__content{
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+    .footer__menu{
+      flex-wrap: wrap;
+      padding: 0;
+      & > div{
+        &:not(:last-child){
+          &:after{
+            display: inline-block;
+          }
+        }
+      }
+    }
+    &__description{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+  }
+}

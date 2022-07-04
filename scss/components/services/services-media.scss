@@ -1,0 +1,48 @@
+.services{
+
+  @include desktop-md-min(){
+    &__content-info .row {
+      gap: 60px;
+      flex-direction: initial;
+      justify-content: space-between;
+    }
+    &__content-title {
+      h2{
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+    &__content-item{
+      max-width: 294px;
+      width: 100%;
+    }
+  }
+  @include desktop-lg-min(){
+    &__content-item{
+      max-width: 258px;
+    }
+  }
+  @include desktop-lg-1-min() {
+    &__content-item{
+      max-width: 261px;
+    }
+  }
+  @include desktop-xl-min(){
+    &__content-info {
+      justify-content: space-between;
+    }
+  }
+  @include desktop-xxl-min(){
+    &__content-item{
+      max-width:400px;
+    }
+  }
+  @include desktop-xxxl-min(){
+    &__content-info {
+      justify-content: space-between;
+    }
+    &__content-item{
+      max-width:493px;
+    }
+  }
+}

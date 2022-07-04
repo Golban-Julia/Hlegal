@@ -1,0 +1,82 @@
+.team {
+
+  @include desktop-md-min {
+    padding-top: 80px;
+  }
+  @include desktop-lg-min {
+
+    &__item {
+      .row {
+        flex-direction: row;
+      }
+
+      &-photo {
+        .img {
+          border-radius: 12px 0 0 12px;
+          height: 528px;
+        }
+      }
+
+      &-text {
+        blockquote {
+          font-size: map-get($font-size, font-size-xl);
+          line-height: 47px;
+        }
+      }
+    }
+  }
+  @include desktop-lg-1-min {
+    &__item {
+      &-photo {
+        .img {
+          max-width: 400px;
+        }
+      }
+
+      &-text {
+        padding: 30px 30px 30px 0;
+      }
+    }
+  }
+  @include desktop-xl-min{
+    &__item{
+      .row {
+        justify-content: space-around;
+      }
+    }
+  }
+  @include desktop-xxl-min {
+    &__item {
+      &-photo {
+        .img {
+          height: 344px;
+        }
+      }
+    }
+  }
+  @include desktop-xxxl-min {
+    .col-xxxl-3 {
+      flex: 0 0 auto;
+      width: 424px;
+    }
+    .col-xxxl-9 {
+      flex: 0 0 auto;
+      width: 1176px;
+    }
+    &__item {
+      &-photo {
+        .img {
+          height: 298px;
+        }
+      }
+
+      &-text {
+        padding: 30px;
+          blockquote {
+            max-width: 1140px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

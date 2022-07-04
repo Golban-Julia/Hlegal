@@ -1,0 +1,20 @@
+.corporation{
+
+  @media (min-width: 575px) {
+    padding-top: 240px;
+  }
+  @include desktop-md-min{
+    padding-top: 240px;
+    &__content{
+      &-img{
+        height: 500px;
+      }
+    }
+  }
+  @include desktop-xl-min{
+    padding-top: 176px;
+    &__content{
+      padding: 0 120px 0 120px;
+    }
+  }
+}

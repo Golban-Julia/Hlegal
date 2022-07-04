@@ -1,0 +1,30 @@
+.about_us{
+  @media (min-width: 575px) {
+    padding: 260px 0 60px 0;
+  }
+  @include desktop-md-min(){
+    &__description{
+      h2{
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+  }
+  @include desktop-lg-1-min(){
+    padding-top: 176px;
+    &__wrapper{
+      flex-direction: row;
+    }
+    &__description {
+      width: 62%;
+    }
+    &__content {
+      width: calc( 38% - 30px);
+    }
+  }
+  @include desktop-xxl-min(){
+    &__wrapper{
+      padding: 0 120px 0 120px;
+    }
+  }
+}

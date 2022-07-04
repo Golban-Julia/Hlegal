@@ -1,0 +1,7 @@
+.banner{
+  @media (min-width: 1178px) {
+    &:before{
+      background-size: contain;
+    }
+  }
+}

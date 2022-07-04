@@ -1,0 +1,47 @@
+$color:(
+        color-white: #FFFFFF,
+        color-black: #000000,
+
+        main-text: #323264,
+        main-alt-text: #46466E,
+        main-soft-text: #686887,
+
+        accent-color:#F0145A,
+
+        active-regular:#24A3FF,
+        active-hover:#0085FF,
+        active-active:#006CCF,
+
+        grey-bg:#F5F5FA,
+        grey-bg-alt: #EDEDF7,
+        grey-bg-text: #B3B3BA,
+        grey-separator: #E6E6F0,
+
+        gradient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%),
+        gradient-header:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%),
+);
+
+$font-size:(
+        font-size-xs: 12px,
+        font-size-sm: 14px,
+        font-size-md: 16px,
+        font-size-lg: 22px,
+        font-size-xl: 38px,
+);
+$font-bold: 700;
+$font-normal: 400;
+$uppercase: uppercase;
+$default-transition: 0.3s;
+$border-bottom: 4px solid map-get($color, grey-separator);
+$border: 2px solid map-get($color, grey-separator);
+$border-bottom: 4px solid map-get($color,grey-separator);
+
+.navbar-nav{
+  --bs-nav-link-color:#{map-get($color, color-white)};
+  --bs-navbar-active-color:#{map-get($color, accent-color)};
+  --bs-nav-link-font-weight: #{$font-bold};
+  --bs-nav-link-font-size:#{map-get($font-size, font-size-md)};
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-hover-color: #{map-get($color,color-white)};
+}

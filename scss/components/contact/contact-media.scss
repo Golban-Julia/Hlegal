@@ -1,0 +1,15 @@
+.contact{
+  @media (min-width: 575px){
+    padding-top: 250px;
+  }
+
+  @include desktop-lg-min(){
+    padding-top: 176px;
+    &__info{
+      width: calc(50% - 30px);
+    }
+    &__form{
+      width: calc(50% - 30px);
+    }
+  }
+}

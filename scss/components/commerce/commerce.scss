@@ -1,0 +1,120 @@
+.commerce{
+  padding-top: 176px;
+
+  &__content{
+    gap: 28px;
+    padding: 0 0 60px 0;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+
+    img{
+      width: 92px;
+      height: 92px;
+      border-radius: 24px;
+    }
+    &-title{
+      h4{
+        @extend %title-gradient-sm;
+        text-align: center;
+      }
+    }
+    p{
+      font-weight: $font-normal;
+      font-size: 19px;
+      line-height: 30px;
+      color: map-get($color, color-white);
+      text-align: center;
+      margin-bottom: 0;
+    }
+    &-btn{
+      font-weight: $font-bold;
+      font-size: map-get($font-size,font-size-md);
+      line-height: 20px;
+      color: map-get($color, color-white);
+      padding: 18px 30px;
+      background: map-get($color, active-regular);
+      box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px;
+      &:hover{
+        background-color: map-get($color, active-hover);
+        transition: $default-transition;
+      }
+      &:active{
+        color: map-get($color,color-black);
+        background-color: map-get($color, active-active);
+        transition: $default-transition;
+      }
+    }
+  }
+}
+
+.modal{
+  --bs-modal-width: 650px;
+  --bs-modal-padding: 0 30px 30px 30px;
+  --bs-modal-header-padding: 30px;
+.modal-content{
+  background-color: map-get($color,grey-bg);
+}
+  .modal-header{
+    border-bottom: none;
+    .modal-title{
+      @extend %title-gradient-sm;
+    }
+  }
+  .modal-dialog{
+    .btn-close {
+      width: 20px;
+      height: 20px;
+      opacity: initial;
+      //margin-left: 48px;
+      color: #EC6F5D;
+      background-image: url("../assets/icons/Close-modal.svg");
+      border: none;
+      box-shadow: none;
+      background-size: cover;
+      margin-left: 10px;
+      &:hover{
+        background-color: map-get($color,grey-separator);
+      }
+    }
+  }
+
+  .modal-body{
+    .form-control{
+      border: 1px solid transparent;
+    }
+    #exampleInputPassword1{
+      height: 130px;
+      margin-bottom: 30px;
+    }
+    .form-text{
+      font-weight: $font-bold;
+      font-size: map-get($font-size,font-size-sm);
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: map-get($color,grey-bg-text);
+    }
+    #InputEmail1{
+      margin-bottom: 30px;
+    }
+    .btn-primary{
+      font-weight: $font-bold;
+      font-size: map-get($font-size, font-size-md);
+      line-height: 20px;
+      text-align: center;
+      color: map-get($color, color-white);
+      background: map-get($color,active-regular);
+      border-color:map-get($color,active-regular);
+      box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px;
+      padding: 18px 0;
+      width: 100%;
+    }
+    & input::-webkit-input-placeholder{
+      color: map-get($color,grey-bg-text);
+    }
+    & textarea::-webkit-input-placeholder{
+      color: map-get($color,grey-bg-text);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  --bs-body-color:none;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: map-get($color,active-regular);
+  &:hover{
+    color: map-get($color,accent-color);
+    transition: $default-transition;
+  }
+  &:active{
+    color: map-get($color, active-active);
+    transition: $default-transition;
+  }
+}
+
+@media (max-width: 376px){
+  .container-clients{
+    max-width: 376px;
+  }
+}
+@media (min-width: 320px) {
+  .container{
+    max-width: 315px;
+  }
+}
+@media (min-width: 375px) {
+  .container{
+    max-width: 339px;
+  }
+}
+@media (min-width: 575px) {
+  .container{
+    max-width: 575px;
+  }
+}
+@media (min-width: 768px) {
+  .container{
+    max-width: 672px;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+    max-width: 896px;
+  }
+}
+@media (min-width: 1024px) {
+  .container{
+    max-width: 928px;
+  }
+}
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1440px) {
+  .container{
+    max-width: 1344px;
+  }
+}
+@media (min-width: 1920px) {
+  .container{
+    max-width: 1624px;
+  }
+}

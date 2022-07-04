@@ -1,0 +1,24 @@
+.clients{
+  padding-top: 76px;
+
+
+  &__title{
+    h4{
+      margin-bottom: 30px;
+      @extend %home-page-a-h4;
+    }
+  }
+
+  &__logo{
+    display: flex;
+    flex-wrap: wrap;
+    .clients__logo-none {
+      display: none;
+    }
+    &-item{
+      width: 100%;
+      height: 120px;
+      @extend %background-img;
+    }
+  }
+}

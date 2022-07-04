@@ -1,0 +1,16 @@
+.background{
+  &__img{
+    background-image: url('../assets/img/about_us-min.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2{
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 0.8;
+      text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+    }
+  }
+}

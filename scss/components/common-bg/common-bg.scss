@@ -1,0 +1,28 @@
+.common-bg{
+  position: relative;
+  border-radius: 0px 0px 12px 12px;
+  background: map-get($color, gradient-header);
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc( 100% - 40px);
+    height: 10px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+    bottom: -10px;
+    margin: 0 20px 0 20px;
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc( 100% - 80px);
+    height: 10px;
+    background: #E7E7F2;
+    border-radius: 0 0 12px 12px;
+    bottom: -20px;
+    margin: 0 40px 0 40px;
+  }
+}

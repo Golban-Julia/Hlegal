@@ -1,0 +1,44 @@
+.clients {
+
+  @include desktop-md-min {
+    &__logo {
+      &-item {
+        width: calc(100% / 3);
+      }
+      .clients__logo-none {
+        display: initial;
+      }
+    }
+  }
+  @include desktop-lg-1-min {
+    &__logo {
+      &-item {
+        width: 25%;
+      }
+    }
+  }
+  @include desktop-xxxl-min {
+    & {
+      padding: 60px 100px;
+    }
+
+    .clients__logo-item.first  {
+      border-radius: 12px 0 0 0;
+    }
+    .clients__logo-item.\.fourth {
+      border-radius: 0 12px 0 0;
+    }
+    .clients__logo-item.\.ninth.clients__logo-none{
+      border-radius: 0 0 0 12px;
+    }
+    .clients__logo-item.\.twelve.clients__logo-none {
+      border-radius: 0 0 12px 0;
+    }
+  }
+
+  @include desktop-xs-max {
+    &__logo-item .clients__logo-none {
+      display: none;
+    }
+  }
+}

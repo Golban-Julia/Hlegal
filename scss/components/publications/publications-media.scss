@@ -1,0 +1,38 @@
+.publications{
+  @include desktop-md-min{
+    &__title{
+      h2{
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+    &__content{
+      flex-direction: row;
+      &-item {
+        &:first-child{
+          padding-right: 15px ;
+        }
+        &.second{
+          padding-left: 15px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include desktop-lg-min{
+    &__content{
+      &-item{
+        margin-bottom: 0;
+
+        &.second{
+          padding-right: 15px;
+        }
+        &:last-child{
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

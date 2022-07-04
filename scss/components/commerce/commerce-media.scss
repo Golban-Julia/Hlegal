@@ -1,0 +1,30 @@
+.commerce{
+  @media (min-width: 575px) {
+    padding-top: 250px;
+  }
+  @include desktop-md-min(){
+    &__content-title{
+      h4{
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+  }
+  @include desktop-xxl-min{
+    & .row{
+      padding: 0 120px 60px 120px;
+    }
+  }
+
+  @include desktop-lg-min{
+    padding: 176px 0 0 0;
+  }
+}
+@include desktop-md-min{
+  .modal{
+    .modal-header .modal-title {
+      font-size: map-get($font-size,font-size-xl);
+      line-height: 46px;
+    }
+  }
+}

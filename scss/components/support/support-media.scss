@@ -1,0 +1,31 @@
+.support{
+  @include desktop-xxs{
+    padding: 30px 0 60px 0;
+    &__content{
+      &-list {
+        gap: 0;
+        flex-direction: column;
+      }
+    }
+  }
+  @include desktop-md-min{
+    &__content{
+      &-list {
+        gap: 60px;
+        flex-direction: row;
+      }
+      &-left{
+        width: 50%;
+      }
+      &-right{
+        width: 50%;
+      }
+    }
+  }
+  @include desktop-xxl-min(){
+    padding: 30px 0 60px 0;
+    & .row{
+      padding: 30px 120px 60px 120px;
+    }
+  }
+}
